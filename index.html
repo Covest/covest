@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="kor" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>title</title>
+
+    <link rel="stylesheet" href="css/common/base.css" type="text/css" />
+    <link rel="stylesheet" href="css/common/header.css" type="text/css" />
+    <link rel="stylesheet" href="css/common/footer.css" type="text/css" />
+    <link rel="stylesheet" href="css/common/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/common/jquery-ui.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/main/main.css" type="text/css" />
+
+    <script src="js/common/jquery-3.5.1.min.js"></script>
+    <script src="js/common/jquery-ui.min.js"></script>
+    <script src="js/common/common.js"></script>
+    <script src="js/common/slick.js"></script>
+    <script src="js/main/main.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        var headerScroll = $('.btc_rate_box').offset();
+
+        $(window).scroll(function () {
+        if ($(document).scrollTop() > headerScroll.top - 100) {
+            $('#header').removeClass('main_box')
+        }
+
+        if ($(document).scrollTop() < headerScroll.top - 100) {
+            $('#header').addClass('main_box')
+        }
+        });
+
+        $('#header .user_dept').mouseenter(function () {
+        $(this).children('.dept2').addClass('on')
+        })
+
+        $('#header .user_dept').mouseleave(function () {
+            $(this).children('.dept2').removeClass('on')
+        })
+    });
+    </script>
+</head>
+
+<body>
+    <!-- start of :: wrap -->
+    <div id="wrap">
+        <!-- start of :: header -->
+        <div id="header" class="main_box main">
+            <div class="inner">
+                <div class="logo">
+                    <h1><a href="index.html"><img src="images/common/logo.png" alt="logo"></a></h1>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="#none">트레이딩</a>
+                            <ul class="dept2">
+                                <li><a href="#none">선물 트레이딩</a></li>
+                                <li><a href="#none">선물 퀵 트레이딩</a></li>
+                                <li><a href="#none">현물 트레이딩</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">P2P</a>
+                            <ul class="dept2">
+                                <li><a href="#none">P2P 거래</a></li>
+                                <li><a href="#none">P2P 관리</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">카피트레이딩</a>
+                        </li>
+                        <li>
+                            <a href="#none">마켓동향</a>
+                            <ul class="dept2">
+                                <li><a href="#none">현물 마켓동향</a></li>
+                                <li><a href="#none">선물 마켓동향</a></li>
+                                <li><a href="#none">코인 동향</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">거래내역</a>
+                            <ul class="dept2">
+                                <li><a href="#none">현물 거래내역</a></li>
+                                <li><a href="#none">선물 거래내역</a></li>
+                                <li><a href="#none">P2P 거래내역</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">입출금</a>
+                            <ul class="dept2">
+                                <li><a href="#none">내자산</a></li>
+                                <li><a href="#none">현물 지갑</a></li>
+                                <li><a href="#none">선물 지갑</a></li>
+                                <li><a href="#none">선물 ↔ 현물</a></li>
+                                <li><a href="#none">코인 ↔ USDT</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#none">고객센터</a>
+                            <ul class="dept2">
+                                <li><a href="#none">공지사항</a></li>
+                                <li><a href="#none">이용가이드</a></li>
+                                <li><a href="#none">수수료 안내</a></li>
+                                <li><a href="#none">고객센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tnb">
+                    <ul>
+                        <li class="login"><a href="#none">로그인</a></li>
+                        <li class="login"><a href="#none">회원가입</a></li>
+                        <li class="user_info user_dept">
+                            <div class="img">
+                                <img src="images/main/user_img.png" alt="user_img">
+                            </div>
+                            <p class="name">UserNo</p>
+                            <!-- 로그인시 dept 적용 -->
+                            <ul class="dept2 on">
+                                <li><a href="#none">대시보드</a></li>
+                                <li><a href="#none">보안인증</a></li>
+                                <li><a href="#none">래퍼럴</a></li>
+                                <li><a href="#none" class="top-line">로그아웃</a></li>
+                            </ul>
+                        </li>
+                        <li class="language">
+                            <select class="selectmenu">
+                                <option value="">KOR</option>
+                                <option value="">ENG</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end of :: header -->
+        <!-- start of :: contents -->
+        <div id="content" class="main_box">
+            <div class="">
+                <div class="slide_box">
+                    <div class="main_slide">
+                        <div class="slide_list">
+                            <img src="images/main/main_slider_01.png" alt="">
+                        </div>
+                        <div class="slide_list">
+                            <img src="images/main/main_slider_01.png" alt="">
+                        </div>
+                        <div class="slide_list">
+                            <img src="images/main/main_slider_01.png" alt="">
+                        </div>
+                        <div class="slide_list">
+                            <img src="images/main/main_slider_01.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#none" class="slickAutoControll"></a>
+                </div>
+
+                <div class="btc_rate_box">
+                    <div class="rate_list">
+                        <p class="name">BTCUSD</p>
+                        <p class="up_down_rate up">+3.54%</p>
+                        <p class="price">$49424.50</p>
+                        <div class="trading_volume">
+                            <p>24H 거래량 71.30만</p>
+                            <p>24H 거래액 14.47억</p>
+                        </div>
+                    </div>
+
+                    <div class="rate_list">
+                        <p class="name new">BCHUSDT</p>
+                        <p class="up_down_rate down">-5.87%</p>
+                        <p class="price">$1255.35</p>
+                        <div class="trading_volume">
+                            <p>24H 거래량 11.13만</p>
+                            <p>24H 거래액 1.37억</p>
+                        </div>
+                    </div>
+
+                    <div class="rate_list">
+                        <p class="name new">ETHUSDT</p>
+                        <p class="up_down_rate down">-4.23%</p>
+                        <p class="price">$3837.40</p>
+                        <div class="trading_volume">
+                            <p>24H 거래량 32.41만</p>
+                            <p>24H 거래액 12.13억</p>
+                        </div>
+                    </div>
+
+                    <div class="rate_list">
+                        <p class="name new">LINKUSDT</p>
+                        <p class="up_down_rate up">+1.01%</p>
+                        <p class="price">$44.261</p>
+                        <div class="trading_volume">
+                            <p>24H 거래량 90.51만</p>
+                            <p>24H 거래액 3860.69억</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="covest_wrap">
+                    <div class="title_img">
+                        <img src="images/main/covest.png" alt="ABOUT COVEST PRO">
+                    </div>
+                    <p class="tit">바이낸스 브로커 트레이딩</p>
+                    <p class="con">
+                        코베스트 회원가입만으로 세계 최대 가상 자산 거래소 "바이낸스" 보다 편리하고 다양한 기능으로 거래할 수 있습니다. <br>빠르고 강력한 모바일 앱 및 웹 트레이딩 시스템 제공!
+                    </p>
+                    <div class="trading_img"></div>
+                </div>
+
+                <div class="invest_info_wrap">
+                    <div class="inner">
+                        <div class="invest_info_list">
+                            <div class="img">
+                                <img src="images/main/trade_01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="tit">카피트레이딩 &amp; 투자리그</p>
+                                <div class="con_wrap w700">
+                                    <p class="con">고수 트레이더 따라하기 - 팔로우 트레이딩</p>
+                                    <p class="con">AI기반한 퀀트전략 따라하기 - 전략카피 트레이딩</p>
+                                    <p class="con">트레이더들 순위 확인 및 실시간 투자리그</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invest_info_list fr">
+                            <div class="img">
+                                <img src="images/main/trade_02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="tit">다양한 투자 컨텐츠 제공</p>
+                                <div class="con_wrap w700">
+                                    <p class="con">전세계 가상자산 투자 정보 제공</p>
+                                    <p class="con">바이낸스 거래소 특화 투자 정보 제공</p>
+                                    <p class="con">기술적 분석을 기반한 차트 시뮬레이션(백테스팅) 제공</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="invest_info_list">
+                            <div class="img">
+                                <img src="images/main/trade_03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="tit">코인 P2P 거래</p>
+                                <div class="con_wrap w700">
+                                    <p class="con">코인 전송 수수료 No!</p>
+                                    <p class="con">서비스 이용에 필요한 USDT를 수수료 없이</p>
+                                    <p class="con">간편하게 개인간 거래할 수 있습니다</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trade_system">
+                    <div class="inner">
+                        <div class="text">
+                            <p class="tit">빠르고 강력한<br>모바일 트레이딩 시스템</p>
+                            <p class="con">코베스트 모바일로 언제 어디서든 빠르게 거래하세요</p>
+                            <div class="download_btn">
+                                <a href="#none">
+                                    <img src="images/main/google_btn.png" alt="">
+                                </a>
+                                <a href="#none">
+                                    <img src="images/main/apple_btn.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/main/mobile_img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of :: contents -->
+        <!-- start of :: footer -->
+        <div id="footer">
+            <div class="inner">
+                <div class="footer_logo">
+                    <a href="index.html">
+                        <p class="logo_tit">암호화폐 거래소</p>
+                        <div class="logo">
+                            <img src="images/common/footer_logo.png" alt="logo">
+                        </div>
+                    </a>
+                </div>
+                <div class="footerMenu">
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt>고객센터</dt>
+                            <dd>support@xignalex.com</dd>
+                        </dl>
+                        <dl>
+                            <dt>운영시간</dt>
+                            <dd>365일 24시간 운영 </dd>
+                        </dl>
+                    </div>
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt><a href="#none">트레이딩</a></dt>
+                            <dd><a href="#none">현물 트레이딩</a></dd>
+                            <dd><a href="#none">선물 트레이딩</a></dd>
+                            <dd><a href="#none">선물 트레이딩 퀵주문</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt><a href="#none">P2P</a></dt>
+                            <dd><a href="#none">P2P 거래하기</a></dd>
+                            <dd><a href="#none">P2P 게시권한 신청</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt><a href="#none">마켓동향</a></dt>
+                            <dd><a href="#none">선물 마켓동향</a></dd>
+                            <dd><a href="#none">현물 마켓동향</a></dd>
+                            <dd><a href="#none">코인 동향</a></dd>
+                            <dd><a href="#none">상장 문의</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt><a href="#none">입출금</a></dt>
+                            <dd><a href="#none">현물지갑</a></dd>
+                            <dd><a href="#none">선물지갑</a></dd>
+                        </dl>
+                    </div>
+                    <div class="footerMenuList">
+                        <dl>
+                            <dt><a href="#none">고객센터</a></dt>
+                            <dd><a href="#none">공지사항</a></dd>
+                            <dd><a href="#none">이용가이드</a></dd>
+                            <dd><a href="#none">수수료</a></dd>
+                            <dd><a href="#none">고객센터</a></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>COPYRIGHT 2021©COVEST ALL RIGHT RESERVED.</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of :: footer -->
+    </div>
+    <!-- end of :: wrap -->
+</body>
+
+</html>

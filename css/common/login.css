@@ -1,0 +1,232 @@
+.login_wrap {
+    background: #F4F7FF;
+}
+
+.cont_box {
+    width:670px;
+    margin: 0 auto;
+    padding:40px 0 180px;
+}
+
+.form_cont {
+    background: #fff;
+}
+
+.title_area {
+    padding:40px 0 60px;
+    text-align: center;
+}
+
+.title_area .title{
+    font-size:24px;
+}
+
+.title_area .sub_text{
+    font-size:16px;
+    padding-top:30px;
+}
+
+.title_tab {
+    width:460px;
+    margin:0 auto;
+}
+
+.title_tab .tab_list{
+    border-bottom:1px solid #9C9EB2;
+}
+
+.title_tab .tab_list::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.title_tab .tab_list li {
+    float:left;
+    width:50%;
+}
+
+.title_tab .tab_list li a{
+    display: block;
+    text-align: center;
+    font-size:16px;
+    padding-bottom:8px;
+    box-sizing: border-box;
+    color:#9C9EB2;
+}
+
+.title_tab .tab_list li a.on{
+    border-bottom:2px solid #4A58DF;
+    color:#4A58DF;
+    font-weight: 500;
+}
+
+.form_wrap .email {
+    margin-top:20px;
+}
+
+.form_wrap input::placeholder {
+    color:#ABABAB;
+}
+
+.form_wrap .input_type01 {
+    width:100%;
+    height:45px;
+    border:1px solid #73768D;
+    text-indent:16px;
+    font-size:14px;
+    box-sizing: border-box;
+}
+
+.form_wrap .create_success {
+    display: block;
+    font-size:14px;
+    color:#4354FF;
+    margin:10px 0;
+}
+
+.form_wrap .create_miss {
+    display: block;
+    font-size:14px;
+    color:#E12242;
+    margin:10px 0;
+}
+
+.form_wrap .point {
+    color:#4A58DF;
+    font-weight: 500;
+}
+
+.form_wrap input[type="checkbox"]:checked + label:after {
+    background: url(../../images/common/checkbox_on.png) center /100% no-repeat;
+}
+
+.form_wrap input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #73768D;
+}
+
+.form_wrap input[type="checkbox"] + label:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    width: 17px;
+    height: 17px;
+    background: url(../../images/common/checkbox_off.png) center /100% no-repeat;
+}
+
+.form_wrap .robot_box{ 
+    width:50%;
+    box-sizing: border-box;
+    border:1px solid #73768D;
+    margin:20px 0 40px;
+    padding:20px 10px;
+    background: url(../../images/common/captcha.png) center right 10px no-repeat;
+}
+
+.form_wrap input[type="checkbox"] + label.account_agree {
+    color:#000000;
+}
+
+.form_wrap .recomm_box label {
+    font-size:16px;
+    padding-bottom:8px;
+    display: block;
+}
+
+.form_wrap .miss_submit{
+    display: block;
+    width:100%;
+    height:50px;
+    line-height: 50px;
+    border:1px solid #3947CC;
+    box-sizing: border-box;
+    font-size:16px; 
+    color:#fff;
+    background: #3947CC;
+    margin-top:20px;
+}
+
+.login_box {
+    text-align: center;
+    padding:10px 0 30px;
+}
+
+.login_box span{
+    color:#9C9EB2;
+    font-size:16px;
+    margin-right:5px;
+}
+
+.login_box .login_link{
+    color:#4A58DF;
+    font-size:16px;
+}
+
+.phone_area {
+    margin:20px 0 30px;
+}
+
+.phone_area .phone_select{
+    width:27%;
+    /* height:45px; */
+    /* border: 1px solid #73768D; */
+    box-sizing: border-box;
+    margin-right:2.5%;
+    text-indent:16px;
+    font-size:14px;
+}
+
+.phone_area .input_type01{
+    width:70%;
+}
+
+.code .input_type01 {
+    width:70%;
+}
+
+.code .code_btn {
+    width:27%;
+    height:45px;
+    border: 1px solid #3947CC;
+    background: #3947CC;
+    box-sizing: border-box;
+    margin-left:2.5%;
+    font-size:14px;
+    color:#fff;
+    vertical-align: -2px;
+}
+
+.form_wrap.pdb {
+    padding-bottom:40px;
+}
+
+.left_box {
+    text-align:left;
+    position:relative;
+}
+
+.left_box .pw_link {
+    position:absolute;
+    top:10px;
+    right:0;
+}
+
+.mrb20 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

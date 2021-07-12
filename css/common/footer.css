@@ -1,0 +1,107 @@
+#footer{
+    background: #0B0C0D;
+    position: relative;
+}
+
+#footer > .inner{
+    width: 1400px;
+    margin: auto;
+    padding-top: 75px;
+    padding-bottom: 200px;
+}
+
+#footer > .inner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#footer .footer_logo{
+    float: left;
+}
+#footer .footer_logo::after{
+    display: block;
+    content:'';
+    width:270px;
+    height:83.22px;
+    margin-top:49px;
+    background: url(../../images/common/footer_logo_02.png) center /100% no-repeat;
+}
+
+#footer .footer_logo .logo_tit{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer .footer_logo .logo{
+    width: 220px;
+    margin-top: 3px;
+}
+
+#footer .footerMenu{
+    float: right;
+}
+
+#footer .footerMenu::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#footer .footerMenu .footerMenuList{
+    float: left;
+    margin-right: 80px;
+}
+
+#footer .footerMenu .footerMenuList:last-child{
+    margin-right: 0;
+}
+
+#footer .footerMenu .footerMenuList dl + dl{
+    margin-top: 55px;
+}
+
+#footer .footerMenu .footerMenuList dl dt{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer .footerMenu .footerMenuList dl dt a{
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer .footerMenu .footerMenuList dl dd{
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 14px;
+}
+
+#footer .footerMenu .footerMenuList dl dd:last-child{
+    margin-bottom: 0;
+}
+
+#footer .footerMenu .footerMenuList dl dd a{
+    font-size: 1em;
+    color: rgba(255,255,255,0.5);
+}
+
+#footer .copyright{
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #242424;
+}
+
+#footer .copyright p{
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+}
